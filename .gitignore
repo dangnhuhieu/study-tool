@@ -1,0 +1,73 @@
+# ========================
+# Java / Maven
+# ========================
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+hs_err_pid*
+
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+.python-version
+
+# ========================
+# Node / Frontend
+# ========================
+node_modules/
+frontend/dist/
+frontend/build/
+*.tsbuildinfo
+
+# ========================
+# IDE
+# ========================
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# ========================
+# Environment & Secrets
+# ========================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ========================
+# Docker
+# ========================
+docker-compose.override.yml
+
+# ========================
+# OS
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Misc
+# ========================
+*.bak
+*.tmp

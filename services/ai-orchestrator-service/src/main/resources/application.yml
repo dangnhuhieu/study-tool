@@ -1,0 +1,31 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: ai-orchestrator-service
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+
+claude:
+  api:
+    key: ${CLAUDE_API_KEY:}
+    models:
+      haiku: claude-haiku-4-5-20251001
+      opus: claude-opus-4-6
+
+services:
+  embedding:
+    url: http://${EMBEDDING_SERVICE_HOST:localhost}:8090
+  speech:
+    url: http://${SPEECH_SERVICE_HOST:localhost}:8091
+  evaluation:
+    url: http://${EVALUATION_SERVICE_HOST:localhost}:8092
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
