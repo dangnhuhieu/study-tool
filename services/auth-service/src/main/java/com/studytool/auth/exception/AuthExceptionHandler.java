@@ -22,4 +22,18 @@ public class AuthExceptionHandler {
     return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
         .body(ApiResponse.error(ex.getMessage()));
   }
+
+  @ExceptionHandler(OAuthProviderConflictException.class)
+  public ResponseEntity<ApiResponse<Void>> handleOAuthProviderConflict(
+      OAuthProviderConflictException ex) {
+    return ResponseEntity.status(HttpStatus.CONFLICT)
+        .body(ApiResponse.error(ex.getMessage()));
+  }
+
+  @ExceptionHandler(IllegalArgumentException.class)
+  public ResponseEntity<ApiResponse<Void>> handleIllegalArgument(
+      IllegalArgumentException ex) {
+    return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+        .body(ApiResponse.error(ex.getMessage()));
+  }
 }

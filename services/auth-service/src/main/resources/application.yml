@@ -21,6 +21,20 @@ jwt:
   expiration: 86400000  # 24 hours
   refresh-expiration: 604800000  # 7 days
 
+oauth2:
+  google:
+    client-id: ${GOOGLE_CLIENT_ID:}
+    client-secret: ${GOOGLE_CLIENT_SECRET:}
+    token-endpoint: https://oauth2.googleapis.com/token
+    user-info-endpoint: https://www.googleapis.com/oauth2/v2/userinfo
+    redirect-uri: http://localhost:8081/api/auth/oauth2/callback/google
+  github:
+    client-id: ${GITHUB_CLIENT_ID:}
+    client-secret: ${GITHUB_CLIENT_SECRET:}
+    token-endpoint: https://api.github.com/login/oauth/access_token
+    user-info-endpoint: https://api.github.com/user
+    redirect-uri: http://localhost:8081/api/auth/oauth2/callback/github
+
 management:
   endpoints:
     web:
