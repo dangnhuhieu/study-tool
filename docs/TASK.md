@@ -26,9 +26,9 @@ Generative UI Chatbot System — 3-tier microservices (React → Spring Boot →
 - [x] 1.9 A2UI protocol design → `docs/design/a2ui-protocol.md`
 - [x] 1.10 frontend architecture design → `docs/design/frontend.md`
 
-## Phase 2: Auth & Gateway ⬜ PENDING
+## Phase 2: Auth & Gateway ⬜ IN PROGRESS
 - [x] 2.1 auth-service: User entity, registration, login, JWT generation/validation
-- [ ] 2.2 auth-service: OAuth2 social login (Google, GitHub)
+- [x] 2.2 auth-service: OAuth2 social login (Google, GitHub)
 - [ ] 2.3 api-gateway: Spring Cloud Gateway, route config, JWT filter, CORS
 - [ ] 2.4 api-gateway: Rate limiting (Redis-backed)
 
