@@ -4,7 +4,7 @@
 
 Single-page React application serving as the chat interface with A2UI dynamic component rendering.
 
-- **Stack**: React 18, Vite 5, TypeScript
+- **Stack**: React 18, Vite 6, TypeScript
 - **Dev port**: 3000 (proxied to gateway at 8080)
 - **Production**: nginx serving static files, reverse proxy to gateway
 

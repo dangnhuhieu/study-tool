@@ -10,7 +10,7 @@ Generative UI Chatbot System — 3-tier microservices (React → Spring Boot →
 - [x] 0.2 Maven multi-module parent POM (Spring Boot 3.3.5, Java 21)
 - [x] 0.3 Shared Java library (DTOs, exceptions, A2UI models)
 - [x] 0.4 Python AI services scaffolds (FastAPI: speech, embedding, evaluation)
-- [x] 0.5 Frontend init (React + Vite 5 + TypeScript)
+- [x] 0.5 Frontend init (React + Vite 6 + TypeScript)
 - [x] 0.6 Docker Compose (PostgreSQL+pgvector, Redis, RabbitMQ, all services)
 - [x] 0.7 GitHub Actions CI pipeline
 
@@ -27,7 +27,7 @@ Generative UI Chatbot System — 3-tier microservices (React → Spring Boot →
 - [x] 1.10 frontend architecture design → `docs/design/frontend.md`
 
 ## Phase 2: Auth & Gateway ⬜ PENDING
-- [ ] 2.1 auth-service: User entity, registration, login, JWT generation/validation
+- [x] 2.1 auth-service: User entity, registration, login, JWT generation/validation
 - [ ] 2.2 auth-service: OAuth2 social login (Google, GitHub)
 - [ ] 2.3 api-gateway: Spring Cloud Gateway, route config, JWT filter, CORS
 - [ ] 2.4 api-gateway: Rate limiting (Redis-backed)

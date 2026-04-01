@@ -18,7 +18,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### 3-Tier Model
 
 ```
-Frontend (React + Vite + TypeScript + A2UI)
+Frontend (React + Vite 6 + TypeScript + A2UI)
                 ↓
 API Gateway (Spring Boot - routing, JWT filter, rate limiting)
                 ↓
